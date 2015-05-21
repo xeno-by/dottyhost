@@ -3,6 +3,7 @@ import java.net._
 import java.io._
 import scala.compat.Platform.EOL
 import scala.meta._
+import scala.meta.dialects.Dotty
 
 class DottyToMeta extends FunSuite {
   def typecheckConvertAndPrettyprint(code: String, debug: Boolean): String = {
